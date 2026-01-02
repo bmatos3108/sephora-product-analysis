@@ -32,41 +32,69 @@ class SephoraAnalyzer:
         """
         products = {
             'product_name': [
-                'Fenty Beauty Foundation', 'Rare Beauty Blush', 'Charlotte Tilbury Mascara',
-                'Dior Lipstick', 'The Ordinary Serum', 'Drunk Elephant Moisturizer',
-                'Urban Decay Eyeshadow', 'Huda Beauty Palette', 'MAC Lipstick',
-                'NARS Blush', 'Too Faced Primer', 'Benefit Brow Pencil',
-                'Tarte Concealer', 'Anastasia Brow Gel', 'La Mer Cream',
-                'Tatcha Cleanser', 'YSL Lipstick', 'Clinique Moisturizer',
-                'Hourglass Foundation', 'Pat McGrath Lipstick', 'Laura Mercier Powder',
-                'Bobbi Brown Concealer', 'Tom Ford Lipstick', 'Estee Lauder Serum'
+                'Fenty Beauty Foundation', 'Fenty Beauty Lipgloss', 'Fenty Beauty Highlighter',
+                'Rare Beauty Blush', 'Rare Beauty Concealer', 'Charlotte Tilbury Mascara',
+                'Charlotte Tilbury Foundation', 'Dior Lipstick', 'Dior Foundation',
+                'The Ordinary Serum', 'The Ordinary Moisturizer', 'The Ordinary Retinol',
+                'Drunk Elephant Moisturizer', 'Urban Decay Eyeshadow', 'Urban Decay Primer',
+                'Huda Beauty Palette', 'Huda Beauty Lipstick', 'MAC Lipstick',
+                'MAC Foundation', 'MAC Powder', 'NARS Blush', 'NARS Concealer',
+                'Too Faced Primer', 'Too Faced Mascara', 'Benefit Brow Pencil',
+                'Tarte Concealer', 'Tarte Foundation', 'Anastasia Brow Gel',
+                'Anastasia Palette', 'La Mer Cream', 'Tatcha Cleanser',
+                'YSL Lipstick', 'Clinique Moisturizer', 'Hourglass Foundation',
+                'Pat McGrath Lipstick', 'Laura Mercier Powder', 'Bobbi Brown Concealer',
+                'Tom Ford Lipstick', 'Estee Lauder Serum', 'NARS Lipstick'
             ],
             'brand': [
-                'Fenty Beauty', 'Rare Beauty', 'Charlotte Tilbury', 'Dior',
-                'The Ordinary', 'Drunk Elephant', 'Urban Decay', 'Huda Beauty',
-                'MAC', 'NARS', 'Too Faced', 'Benefit', 'Tarte', 'Anastasia',
-                'La Mer', 'Tatcha', 'YSL', 'Clinique', 'Hourglass',
-                'Pat McGrath', 'Laura Mercier', 'Bobbi Brown', 'Tom Ford', 'Estee Lauder'
+                'Fenty Beauty', 'Fenty Beauty', 'Fenty Beauty',
+                'Rare Beauty', 'Rare Beauty', 'Charlotte Tilbury',
+                'Charlotte Tilbury', 'Dior', 'Dior',
+                'The Ordinary', 'The Ordinary', 'The Ordinary',
+                'Drunk Elephant', 'Urban Decay', 'Urban Decay',
+                'Huda Beauty', 'Huda Beauty', 'MAC',
+                'MAC', 'MAC', 'NARS', 'NARS',
+                'Too Faced', 'Too Faced', 'Benefit',
+                'Tarte', 'Tarte', 'Anastasia',
+                'Anastasia', 'La Mer', 'Tatcha',
+                'YSL', 'Clinique', 'Hourglass',
+                'Pat McGrath', 'Laura Mercier', 'Bobbi Brown',
+                'Tom Ford', 'Estee Lauder', 'NARS'
             ],
             'category': [
-                'Face', 'Face', 'Eyes', 'Lips', 'Skincare', 'Skincare',
-                'Eyes', 'Eyes', 'Lips', 'Face', 'Face', 'Eyes',
-                'Face', 'Eyes', 'Skincare', 'Skincare', 'Lips', 'Skincare',
-                'Face', 'Lips', 'Face', 'Face', 'Lips', 'Skincare'
+                'Face', 'Lips', 'Face',
+                'Face', 'Face', 'Eyes', 'Face', 'Lips', 'Face',
+                'Skincare', 'Skincare', 'Skincare',
+                'Skincare', 'Eyes', 'Face',
+                'Eyes', 'Lips', 'Lips',
+                'Face', 'Face', 'Face', 'Face',
+                'Face', 'Eyes', 'Eyes',
+                'Face', 'Face', 'Eyes',
+                'Eyes', 'Skincare', 'Skincare',
+                'Lips', 'Skincare', 'Face',
+                'Lips', 'Face', 'Face',
+                'Lips', 'Skincare', 'Lips'
             ],
             'price': [
-                38, 23, 29, 42, 7, 68, 54, 67, 20, 32, 34, 24,
-                29, 23, 185, 35, 39, 31, 49, 40, 41, 32, 57, 78
+                38, 20, 32, 23, 27, 29, 44, 42, 52,
+                7, 9, 12, 68, 54, 35, 67, 29, 20,
+                39, 32, 32, 31, 34, 26, 24,
+                29, 41, 23, 49, 185, 35,
+                39, 31, 49, 40, 41, 32, 57, 78, 28
             ],
             'rating': [
-                4.5, 4.7, 4.3, 4.6, 4.4, 4.2, 4.5, 4.8, 4.4, 4.6,
-                4.3, 4.5, 4.4, 4.7, 4.1, 4.5, 4.5, 4.3, 4.6, 4.4,
-                4.5, 4.5, 4.3, 4.2
+                4.5, 4.4, 4.6, 4.7, 4.5, 4.3, 4.5, 4.6, 4.4,
+                4.4, 4.3, 4.5, 4.2, 4.5, 4.4, 4.8, 4.3, 4.4,
+                4.5, 4.4, 4.6, 4.5, 4.3, 4.4, 4.5,
+                4.4, 4.5, 4.7, 4.6, 4.1, 4.5,
+                4.5, 4.3, 4.6, 4.4, 4.5, 4.5, 4.3, 4.2, 4.6
             ],
             'num_reviews': [
-                15234, 8901, 6543, 4231, 12045, 5678, 9876, 11234,
-                7890, 6789, 5432, 8765, 9012, 10123, 3456, 7654,
-                5678, 6543, 8901, 7234, 6543, 7890, 4567, 5678
+                15234, 9845, 7651, 8901, 6234, 6543, 8932, 4231, 5678,
+                12045, 8934, 9123, 5678, 9876, 7234, 11234, 5432, 7890,
+                10234, 6543, 6789, 7456, 5432, 6789, 8765,
+                9012, 7890, 10123, 8456, 3456, 7654,
+                5678, 6543, 8901, 7234, 6543, 7890, 4567, 5678, 5234
             ]
         }
         
